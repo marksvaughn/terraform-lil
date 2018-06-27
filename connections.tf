@@ -1,13 +1,12 @@
 
-
 provider "google" {
     credentials = "${file("../account.json")}"
-    project = "My First Project"
+    project = "calm-metric-199920"
     region = "us-west1"
 }
 
-provider "aws"
-    region = "us-west-2"
+provider "aws" {
+    region = "us-west-1"
 }
 
 provider "azurerm" {
